@@ -1,0 +1,329 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+body{
+    background-color:#000;
+}
+:root{
+    --white:#fff;
+    --blue:#42039a;
+    --black:#000;
+    --dark-blue:#000000d0;
+    --lighter-blue:#25035c6f;
+    --button-dark:#090232;
+    --button-light:#2f088c;
+    --card-background:#18151a;
+    --card-border:#3c3a3a;
+    --button-hover-color:#5c3cdc;
+    --gradient-color1:#5c3cdc;
+    --gradient-color2:#b32ae4;
+}
+.homepage{
+    padding:10px 8%;
+    height:100vh;
+    background:url("../images/pexels-josh-sorenson-1714202.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.homeInformation{
+    color:#fff;
+    margin-top: 10%;
+    width:50%;
+    line-height: 1.5;
+}
+.homeInformation>h1{
+    font-size: 2.5em;
+}
+.homeInformation>p{
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+.navBar>ul>li,.marketnavBar>ul>li{
+    display:inline-block;
+    padding: 10px;
+    border-radius: 50px;
+    transition: all 0.5s ease-in;
+}
+header,.createNTF,.marketItems{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding:10px 15px;
+    background-color: var(--white);
+    border-radius: 50px;
+}
+.navBar>ul>li:hover,.navBar>ul>li:hover{
+    background-color: var(--blue);  
+}
+.navBar>ul>li:hover>a, .marketnavBar>ul>li>a, .marketItems>h1{
+    color:var(--white);
+}
+.navBar>ul.active>a,.marketnavBar>ul>.active>a, .navBar>ul>.active, .marketnavBar>ul>.active{
+    background-color: var(--blue);
+    color:var(--white);
+}
+.navBar>ul>li>a, .marketnavBar>ul>li>a{
+    text-decoration: none;
+    margin:10px;
+    font-size: 1.3em;
+    color: var(--black);
+}
+header>img{
+    height:60px;
+    width:60px;
+    margin-right: 250px;
+    border-radius: 20px;
+}
+.homeInformation{
+    margin-top: 10%;
+    width:50%;
+    color:var(--white);
+    line-height: 1.6;
+}
+.homeInformation>h1{
+    font-size: 2.5em;
+}
+.homeInformation>p{
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+.homeButton>button{
+    border:none;
+    padding: 15px 20px;
+    font-size: 1em;
+    border-radius: 50px;
+    margin:20px;
+    letter-spacing: 1px;
+    transition:all 0.5s;
+    background: linear-gradient(45deg,var(--button-dark),var(--button-light));
+    color:var(--white);
+    box-shadow: 0px 10px 10px var(--black);
+    margin-left: 0;
+}
+.homeButton>button:hover{
+    background:transparent;
+    border:5px solid var(--white);
+}
+.categories,.collections,.createDescription,.itemcardContainer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    padding:20px 10px;
+    background-color: var(--black);
+    flex-flow: row wrap;
+}
+.categoriesName{
+    position:relative;
+    text-align: center;
+    color:var(--white);
+    background-color: var(--black);
+    padding:30px;
+    line-height: 3;
+}
+.categoriesName label{
+    color:var(--blue);
+}
+.categoriesName div{
+    position:absolute;
+    left:45%;
+    width:120px;
+    height:5px;
+    background-color: var(--blue);
+}
+.categories>div,.collections>div,.createDescription>div,.itemcardContainer>.card{
+    flex:1;
+    text-align: center;
+    background-color:var(--card-background);
+    border-radius: 20px;
+    border:1px solid var(--card-border);
+    color:var(--white);
+    padding-top: 20px;
+    line-height: 2;
+    height:150px;
+}
+.categories [class*="fa"],.createDescription[class*="fa"]{
+    color:var(--blue);
+    background-color: var(--white);
+    border-radius: 50px;
+    padding:17px;
+    width:60px;
+    height:60px;
+}
+.collections>div{
+    line-height: 3;
+    text-align: left;
+    position:relative;
+    height:fit-content;
+    margin-top: 20px;
+    height:fit-content;
+    padding-bottom: 20px;
+}
+.collections>div>h2{
+    font-size: 1.3em;
+    margin-left: 20px;
+}
+.collections>div>img{
+    width:100%;
+    margin-top: -20px;
+    border-radius: 20px 20px 0px 0px;
+}
+.collections>div>hr,.cardtextContainer>hr{
+    margin:20px;
+    opacity: 0.2;
+}
+.collections>div>table{
+    width:100%;
+    line-height: 1.6;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.collections>div>button,.createNTF>button{
+    position:absolute;
+    width:80%;
+    border:none;
+    font-size: 1.1em;
+    color:var(--white);
+    padding:15px;
+    background-color: var(--blue);
+    border-radius: 50px;
+    left:10%;
+    bottom:-23px;
+}
+.collections>div>button:hover,.createNTF>div>button:hover{
+    background-color:var(--button-hover-color);
+}
+.collections>div>button::after,.createNTF>button::after{
+    content:"";
+    position:absolute;
+    width:80%;
+    height:3px;
+    left:23px;
+    bottom:0;
+    background-color: var(--white);
+}
+.createNTF{
+    position:relative;
+    border-radius: 0;
+    background-color: transparent;
+    color:var(--white);
+    width:80%;
+    margin-left: 9%;
+}
+.createNTF>button{
+    width:200px;
+    position:relative;
+    font-size: 1em;
+    text-align: center;
+}
+.create,footer{
+    background:linear-gradient(45deg,var(--gradient-color1),var(--gradient-color2)) ;
+    padding:50px 0px;
+    margin-top: 15%;
+}
+.createDescription{
+    background-color: transparent;
+}
+.createDescription>div>p{
+    letter-spacing: 1px;
+}
+.createDescription section{
+    display:block;
+    position: relative;
+    top:-100px;
+    left:5px;
+    color: var(--white);   
+}
+.createDescription section::after{
+    content:"";
+    position:absolute;
+    height:230px;
+    left:2px;
+    top:20px;
+    width:2px;
+    background-color: var(--white);
+    opacity:0.1;
+}
+.createNTF>h1::before,.marketItems>h1::before{
+    content:"";
+    position: absolute;
+    width:100px;
+    height:3px;
+    top:-15px;
+    background-color: var(--white);
+}
+.createDescription>div{
+    border: none;
+    text-align: left;
+    background-color: transparent;
+    height: fit-content;
+}
+.itemCards{
+    padding:8% 40px;
+}
+.marketItems{
+    background-color: var(--black);
+    position:relative;
+    margin-top: 40px;
+}
+.marketnavBar>ul>li>a{
+    color:var(--white);
+    font-size: 1.3em;
+}
+.marketItems>h1>label,.cardtextContainer>div>div>h4,.cardtextContainer>h4,.footer>h3>label{
+    color:var(--blue);
+}
+.itemcardContainer,footer{
+    color:var(--white);
+    text-align: center;
+    margin-top: 0;
+    padding:30px;
+    justify-content: space-around;
+}
+.itemcardContainer .card{
+    display:flex;
+    text-align: left;
+    position:relative;
+    height:fit-content;
+    align-items: center;
+    flex:1;
+    letter-spacing: 0.5px;
+    width:fit-content;
+    padding:20px;
+    gap:20px;  
+}
+.itemcardContainer>.card>img{
+    height:4px;
+    border-radius: 25px;
+}
+.itemcardContainer>.card>.cardtextContainer>table{
+    width:100%;
+    text-align: right;
+    margin-bottom: 20px;
+}
+.cardtextContainer{
+    margin-left: 20px;
+}
+.cardtextContainer>div{
+    display:flex;
+    align-items: center;
+    line-height: 1.5;
+    gap:10px;
+    margin-top: 15px;
+}
+.cardtextContainer>div>img{
+    width:55px;
+    height:55px;
+    border-radius: 50px;
+}
+.cardtextContainer>h1{
+    width:100%;
+
+}
+.cardtextContainer>h4{
+    text-decoration: underline;
+}
